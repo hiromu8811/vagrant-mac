@@ -18,6 +18,8 @@
 
 - https://blank-oldstranger.com/2018/11/09/mac-ubuntu/
 
+- [Vagrantfile](Vagrantfile)
+
 ## vagrant boxes
 
 - https://app.vagrantup.com/boxes/search
@@ -117,7 +119,7 @@ sudo apt install zip
 - https://okchan08.hateblo.jp/entry/2019/01/24/190000
 - https://reference.digilentinc.com/vivado/installing-vivado/start
 - https://github.com/Digilent/vivado-boards/
-  - wget https://github.com/Digilent/vivado-boards/archive/master.zip
+  - https://github.com/Digilent/vivado-boards/archive/master.zip
 
 ```
 cp /data/vivado/install/Xilinx_Vivado_SDK_Web_2017.4_1216_1_Lin64.bin ~/
