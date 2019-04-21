@@ -72,20 +72,45 @@ end
 
 ## ubuntu ssh
 
+```
 cat /data/setting/id_rsa.pub >> ~/.ssh/authorized_keys
+```
+
+## ubuntu alias setting
+
+```
+cp /data/setting/bash_aliases ~/.bash_aliases
+```
+
+## ubuntu update
+
+```
+sudo apt update
+sudo apt upgrade
+sudo apt dist-upgrade
+sudo apt autoremove 
+sudo apt autoclean
+```
 
 ## ubuntu emacs
 
+```
 sudo apt install emacs
+cp /data/setting/init.el ~/.emacs.d
+```
 
 ## ubuntu x11
 
+```
 sudo apt install xserver-xorg
 sudo apt install x11-apps
+```
 
 ## ubuntu zip
 
+```
 sudo apt install zip
+```
 
 ## vivado install
 
@@ -95,24 +120,17 @@ sudo apt install zip
   - wget https://github.com/Digilent/vivado-boards/archive/master.zip
 
 ```
-cp /data/vivado/Xilinx_Vivado_SDK_Web_2017.4_1216_1_Lin64.bin ~/
-cd ~/
+cp /data/vivado/install/Xilinx_Vivado_SDK_Web_2017.4_1216_1_Lin64.bin ~/
 sudo chmod u+x Xilinx_Vivado_SDK_Web_2017.4_1216_1_Lin64.bin
+cp /data/vivado/install/master.zip ~/
+unzip master.zip 
+
 sudo ./Xilinx_Vivado_SDK_Web_2017.4_1216_1_Lin64.bin
 source /opt/Xilinx/Vivado/2017.4/settings64.sh
+
 cd /opt/Xilinx/Vivado/2017.4/data/xicom/cable_drivers/lin64/install_script/install_drivers
 sudo ./install_drivers
 sudo adduser $USER dialout
-unzip /data/vivado/master.zip
-sudo cp -r /data/vivado/vivado-boards-master/new/board_files /opt/Xilinx/Vivado/2017.4/data/boards/board_files/digilent
+sudo cp -r /home/vagrant/vivado-boards-master/new/board_files/ /opt/Xilinx/Vivado/2017.4/data/boards/board_files/digilent
 sudo chmod -cR 777 /home/vagrant/.Xilinx
-# sudo chmod 777 /home/vagrant/.Xilinx
-# sudo chmod 777 /home/vagrant/.Xilinx/Vivado/2017.4/XilinxTclStore
-# sudo chmod 777 /home/vagrant/.Xilinx/Vivado/tclapp/manifest.tcl
-# sudo chmod 777 /home/vagrant/.Xilinx/Vivado/2017.4/vivado.xml
-# sudo chmod 777 /home/vagrant/.Xilinx/Vivado/2017.4
 ```
-
-## ubuntu desktop
-
-sudo apt install ubuntu-desktop
