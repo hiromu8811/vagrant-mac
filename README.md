@@ -136,3 +136,8 @@ sudo adduser $USER dialout
 sudo cp -r /home/vagrant/vivado-boards-master/new/board_files/ /opt/Xilinx/Vivado/2017.4/data/boards/board_files/digilent
 sudo chmod -cR 777 /home/vagrant/.Xilinx
 ```
+
+## iverilog install
+
+sudo apt install iverilog
+
