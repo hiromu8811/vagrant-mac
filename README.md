@@ -139,5 +139,6 @@ sudo chmod -cR 777 /home/vagrant/.Xilinx
 
 ## iverilog install
 
+```
 sudo apt install iverilog
-
+```
