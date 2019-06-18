@@ -135,6 +135,10 @@ sudo ./install_drivers
 sudo adduser $USER dialout
 sudo cp -r /home/vagrant/vivado-boards-master/new/board_files/ /opt/Xilinx/Vivado/2017.4/data/boards/board_files/digilent
 sudo chmod -cR 777 /home/vagrant/.Xilinx
+
+sudo dpkg --add-architecture i386
+sudo apt update
+sudo apt install lib32stdc++6 libstdc++6:i386 libgtk2.0-0:i386 libfontconfig1:i386 libx11-6:i386 libxext6:i386 libxrender1:i386 libsm6:i386 libqtgui4:i386
 ```
 
 ## iverilog install
