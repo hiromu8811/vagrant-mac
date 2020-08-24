@@ -139,6 +139,9 @@ sudo chmod -cR 777 /home/vagrant/.Xilinx
 sudo dpkg --add-architecture i386
 sudo apt update
 sudo apt install lib32stdc++6 libstdc++6:i386 libgtk2.0-0:i386 libfontconfig1:i386 libx11-6:i386 libxext6:i386 libxrender1:i386 libsm6:i386 libqtgui4:i386
+sudo apt install gtkterm
+sudo apt install cu
+sudo apt install setserial
 ```
 
 ## iverilog install
